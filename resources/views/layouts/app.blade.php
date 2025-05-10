@@ -7,7 +7,7 @@
     <title>Personal Blog</title>
     @vite('resources/css/app.css')
 </head>
-<body>
+<body class="font-sans">
     @yield('content')
 </body>
 </html>

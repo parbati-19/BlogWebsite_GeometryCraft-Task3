@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->string('description');
             $table->date('published_date');
-            $table->enum('category', ['Technology','Personal','Work'])->default('Technology');
+            $table->enum('category', ['Technology','Personal','World','Work'])->default('Technology');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
